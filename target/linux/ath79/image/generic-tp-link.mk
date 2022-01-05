@@ -775,6 +775,16 @@ define Device/tplink_tl-wr842n-v3
 endef
 TARGET_DEVICES += tplink_tl-wr842n-v3
 
+define Device/tplink_tl-wr882n-v1
+  $(Device/tplink-16mlzma)
+  SOC := tp9343
+  DEVICE_MODEL := TL-WR882N
+  DEVICE_VARIANT := v1
+  TPLINK_HWID := 0x08820001
+  SUPPORTED_DEVICES += tl-wr882n-v1
+endef
+TARGET_DEVICES += tplink_tl-wr882n-v1
+
 define Device/tplink_tl-wr902ac-v1
   $(Device/tplink-safeloader)
   SOC := qca9531
